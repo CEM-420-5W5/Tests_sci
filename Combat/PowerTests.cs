@@ -1,5 +1,5 @@
-﻿using Super_Cartes_Infinies.Combat;
-using Super_Cartes_Infinies.Models;
+﻿using WebApi.Combat;
+using Models.Models;
 
 namespace Tests.Services
 {
@@ -27,6 +27,7 @@ namespace Tests.Services
             CardPower cardPower = new CardPower
             {
                 Power = firstStrikePower,
+                PowerId = firstStrikePower.Id,
                 Card = _cardA
             };
 
@@ -59,6 +60,7 @@ namespace Tests.Services
             CardPower cardPower = new CardPower
             {
                 Power = firstStrikePower,
+                PowerId = firstStrikePower.Id,
                 Card = _cardA
             };
 
@@ -88,6 +90,7 @@ namespace Tests.Services
             CardPower cardPower = new CardPower
             {
                 Power = firstStrikePower,
+                PowerId = firstStrikePower.Id,
                 Card = _cardB
             };
 
@@ -120,6 +123,7 @@ namespace Tests.Services
             CardPower cardPower = new CardPower
             {
                 Power = thornsPower,
+                PowerId = thornsPower.Id,
                 Card = _cardB,
                 Value = 1
             };
@@ -151,6 +155,7 @@ namespace Tests.Services
             {
                 Power = thornsPower,
                 Card = _cardB,
+                PowerId = thornsPower.Id,
                 // On veut être certain que l'attaquant meurt par Thorns pendant le test
                 Value = _cardA.Health
             };
@@ -186,6 +191,7 @@ namespace Tests.Services
             CardPower cardPower = new CardPower
             {
                 Power = thornsPower,
+                PowerId = thornsPower.Id,
                 Card = _cardA,
                 Value = 3
             };
@@ -213,6 +219,7 @@ namespace Tests.Services
             CardPower cardPower = new CardPower
             {
                 Power = healPower,
+                PowerId = healPower.Id,
                 Card = _cardB,
                 Value = 3
             };

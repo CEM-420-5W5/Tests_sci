@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Super_Cartes_Infinies.Models;
+using Models.Models;
 
 namespace Tests.Services
 {
@@ -55,7 +55,8 @@ namespace Tests.Services
                 Id = 42,
                 Attack = 2,
                 Health = 3,
-                Cost = 1
+                Cost = 1,
+                CardPowers = new List<CardPower> ()
             };
 
             _cardB = new Card
@@ -63,7 +64,8 @@ namespace Tests.Services
                 Id = 43,
                 Attack = 1,
                 Health = 5,
-                Cost = 1
+                Cost = 1,
+                CardPowers = new List<CardPower>()
             };
 
             _playableCardA = new PlayableCard(_cardA)

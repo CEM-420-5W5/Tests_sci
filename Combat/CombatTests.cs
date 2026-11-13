@@ -1,5 +1,5 @@
-﻿using Super_Cartes_Infinies.Combat;
-using Super_Cartes_Infinies.Models;
+﻿using WebApi.Combat;
+using Models.Models;
 
 namespace Tests.Services
 {
